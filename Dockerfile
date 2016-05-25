@@ -4,6 +4,7 @@ MAINTAINER Christian Reinbacher <reinbacher@icg.tugraz.at>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    cuda-drivers \
     cuda-toolkit-7.5 \
     git \
     libopencv-dev \
