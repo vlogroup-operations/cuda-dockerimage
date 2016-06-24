@@ -9,5 +9,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libopencv-dev \
     cmake \
     build-essential \
+    doxygen \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
