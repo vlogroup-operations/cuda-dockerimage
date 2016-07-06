@@ -16,5 +16,6 @@ RUN apt-get update && \
     doxygen \
     openssh-client \ 
     cmake \
+    libpng++-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
