@@ -4,7 +4,7 @@ MAINTAINER Christian Reinbacher <reinbacher@icg.tugraz.at>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-    apt-get install software-properties-common && \
+    apt-get install -y software-properties-common && \
     add-apt-repository -y ppa:george-edison55/cmake-3.x && \
     apt-get update && apt-get install -y --no-install-recommends \
     cuda-drivers \
