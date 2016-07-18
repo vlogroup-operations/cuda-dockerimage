@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
+    add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
     add-apt-repository -y ppa:george-edison55/cmake-3.x && \
     apt-get update && apt-get install -y --no-install-recommends \
     cuda-drivers \
@@ -17,5 +18,7 @@ RUN apt-get update && \
     openssh-client \ 
     cmake \
     libpng++-dev \
+    gcc-4.9 \
+    g++-4.9 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
