@@ -21,5 +21,7 @@ RUN apt-get update && \
     gcc-4.9 \
     g++-4.9 \
     libboost-all-dev \
+    libinsighttoolkit4-dev \
+    libinsighttoolkit4.5 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
