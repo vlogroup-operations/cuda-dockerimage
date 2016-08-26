@@ -20,5 +20,6 @@ RUN apt-get update && \
     libpng++-dev \
     gcc-4.9 \
     g++-4.9 \
+    libboost-all-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
