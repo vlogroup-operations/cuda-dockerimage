@@ -23,5 +23,7 @@ RUN apt-get update && \
     libboost-all-dev \
     libinsighttoolkit4-dev \
     libinsighttoolkit4.5 \
+    texlive-full \
+    latexdiff \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
