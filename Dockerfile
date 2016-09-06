@@ -7,6 +7,7 @@ RUN apt-get update && \
     apt-get install -y software-properties-common && \
     add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
     add-apt-repository -y ppa:george-edison55/cmake-3.x && \
+    echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros-latest.list && \
     apt-get update && apt-get install -y --no-install-recommends \
     cuda-drivers \
     cuda-toolkit-7.5 \
@@ -25,5 +26,8 @@ RUN apt-get update && \
     libinsighttoolkit4.5 \
     texlive-full \
     latexdiff \
+    ros-jade-catkin \
+    python-catkin-tools \
+    python-catkin-pkg \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
