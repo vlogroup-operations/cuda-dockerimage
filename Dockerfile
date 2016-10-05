@@ -1,4 +1,4 @@
-FROM nvidia/cuda:7.5-cudnn5-devel
+FROM nvidia/cuda:8.0-cudnn5-devel
 MAINTAINER Christian Reinbacher <reinbacher@icg.tugraz.at>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -10,7 +10,7 @@ RUN apt-get update && \
     echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros-latest.list && \
     apt-get update && apt-get install -y --force-yes --no-install-recommends \
     cuda-drivers \
-    cuda-toolkit-7.5 \
+    cuda-toolkit-8.0 \
     git \
     libopencv-dev \
     cmake \
