@@ -24,6 +24,7 @@ RUN apt-get update && \
     libboost-all-dev \
     libinsighttoolkit4-dev \
     libinsighttoolkit4.5 \
+    libeigen3-dev \
     texlive-full \
     latexdiff \
     ros-jade-catkin \
