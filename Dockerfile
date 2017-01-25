@@ -24,11 +24,11 @@ RUN apt-get update && \
     g++-4.9 \
     libboost-all-dev \
     libinsighttoolkit4-dev \
-    libinsighttoolkit4.5 \
+    libinsighttoolkit4.9 \
     libeigen3-dev \
     texlive-full \
     latexdiff \
-    ros-jade-catkin \
+    ros-kinetic-catkin \
     python-catkin-tools \
     python-catkin-pkg \
  && apt-get clean \
