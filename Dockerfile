@@ -12,6 +12,7 @@ RUN apt-get update && \
     cuda-drivers \
     cuda-toolkit-8.0 \
     git \
+    wget \
     libopencv-dev \
     cmake \
     build-essential \
