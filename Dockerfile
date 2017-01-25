@@ -19,6 +19,8 @@ RUN apt-get update && \
     doxygen \
     openssh-client \ 
     cmake \
+    libpng16-dev \
+    libpng16-16 \
     libpng++-dev \
     gcc-4.9 \
     g++-4.9 \
