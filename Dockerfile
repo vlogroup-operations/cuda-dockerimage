@@ -1,4 +1,5 @@
-FROM nvidia/cuda:8.0-cudnn5-devel
+FROM topiaruss/nvidia-ub1404cuda80-cudnn5
+#FROM nvidia/cuda:8.0-cudnn5-devel
 MAINTAINER Christian Reinbacher <reinbacher@icg.tugraz.at>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -24,11 +25,11 @@ RUN apt-get update && \
     g++-4.9 \
     libboost-all-dev \
     libinsighttoolkit4-dev \
-    libinsighttoolkit4.9 \
+    libinsighttoolkit4.5 \
     libeigen3-dev \
     texlive-full \
     latexdiff \
-    ros-kinetic-catkin \
+    ros-jade-catkin \
     python-catkin-tools \
     python-catkin-pkg \
  && apt-get clean \
