@@ -1,5 +1,4 @@
-FROM topiaruss/nvidia-ub1404cuda80-cudnn5-devel
-#FROM nvidia/cuda:8.0-cudnn5-devel
+FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu14.04
 MAINTAINER Christian Reinbacher <reinbacher@icg.tugraz.at>
 
 ENV DEBIAN_FRONTEND noninteractive
