@@ -7,7 +7,6 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
     add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
-    add-apt-repository -y ppa:george-edison55/cmake-3.x && \
     echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros-latest.list && \
     apt-get update && apt-get install -y --force-yes --no-install-recommends \
     cuda-drivers \
@@ -25,11 +24,11 @@ RUN apt-get update && \
     g++-4.9 \
     libboost-all-dev \
     libinsighttoolkit4-dev \
-    libinsighttoolkit4.5 \
+    libinsighttoolkit4.9 \
     libeigen3-dev \
     texlive-full \
     latexdiff \
-    ros-jade-catkin \
+    ros-kinetic-catkin \
     python-catkin-tools \
     python-catkin-pkg \
  && apt-get clean \
