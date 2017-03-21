@@ -32,5 +32,6 @@ RUN apt-get update && \
     ros-kinetic-catkin \
     python-catkin-tools \
     python-catkin-pkg \
+    libfftw3-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
