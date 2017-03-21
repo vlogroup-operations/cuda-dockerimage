@@ -8,7 +8,6 @@ RUN apt-get update && \
     apt-get install -y software-properties-common && \
     add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
     echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros-latest.list && \
-    apt-key adv --keyserver keys.gnupg.net --recv-keys 5523BAEEB01FA116 && \
     apt-get update && apt-get install -y --allow-unauthenticated --allow-downgrades --allow-remove-essential --allow-change-held-packages --no-install-recommends \
     initramfs-tools \
     cuda-drivers \
