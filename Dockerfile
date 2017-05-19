@@ -1,5 +1,5 @@
-FROM nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04
-MAINTAINER Christian Reinbacher <reinbacher@icg.tugraz.at>
+FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+MAINTAINER Patrick Knöbelreiter <knoebelreiter@icg.tugraz.at>
 
 
 ENV DEBIAN_FRONTEND noninteractive
